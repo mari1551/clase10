@@ -1,0 +1,112 @@
+/* Normalización */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial,Helvetica,sans-serif;
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul, ol {
+    list-style-type: none;
+}
+
+p{
+    text-align: justify;
+    font-size: large;
+}
+
+img {
+    width: 100%;
+}
+
+/* HEADER */
+
+.encabezado {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+.encabezado_logo_img {
+    width: 200px;
+    height: 20px;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+}
+
+.navbar_items {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin-right: 70px;
+}
+
+.navbar_item_link {
+    transition: background 140ms ease-in-out;
+    padding: 8px;
+}
+
+.navbar_item_link:hover {
+    background-color: #F4E869;
+}
+
+.checkbtn {
+    font-size: 25px;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+
+
+
+@media (max-width: 768px) {
+    .navbar_items {
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+        margin-right: 30px;
+        text-align: right;
+    }
+
+    .navbar_item {
+        /* display: none; */
+        transition: .5s;
+        right: -100%;
+    }
+
+    .checkbtn {
+        display: block;
+        margin-right: 20px;
+    }
+
+    #check:checked ~ li {
+        right: 0;
+    }
+}
+
+
+/* Mariana */
+
+
+
+/* FOOTER */
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
